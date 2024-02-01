@@ -10,13 +10,108 @@ main {
   overflow-y: hidden;
 }
 
+h1 {
+  margin-bottom: 15px;
+}
+
+li a {
+  color: white;
+  text-decoration: none;
+}
+
+span {
+  font-size: 1.2em;
+}
+
+span:hover {
+  font-weight: bold;
+  background-color: rgb(92, 161, 173);
+  color: white;
+}
 .sidebar {
   width: 280px;
+  overflow-y: scroll;
+}
+
+.sidebar img {
+  margin-bottom: 10px;
+}
+
+.Card_Song,
+.buttonDelPlay,
+.buttonsDelLik {
+  display: flex;
+  justify-content: space-between;
+}
+
+.buttonDelPlay button,
+.buttonsDelLik button {
+  border: none;
+  background: none;
 }
 
 .main-content {
   flex-grow: 1;
-  padding-top: 200px;
+  padding-top: 10px;
   padding-left: 10px;
   padding-right: 10px;
+  overflow-y: scroll;
+}
+
+.list-group li:hover {
+  background-color: rgb(118, 248, 118);
+  border: 1px solid black;
+  padding: 5px;
+}
+
+.Card_Song {
+  margin-bottom: 15px;
+}
+
+.Card_Playlist {
+  display: flex;
+  justify-content: space-between;
+}
+
+.Card_Playlist li {
+  margin-bottom: 10px;
+}
+
+.button_AddPL {
+  border: 1px solid black;
+  margin-bottom: 30px;
+  background: white;
+  text-align: center;
+  width: 100%;
+}
+
+.button_AddSg {
+  display: flex;
+  justify-content: flex-end;
+  border-bottom: 1px solid black;
+}
+
+#buttonAddSong {
+  border: 1px solid black;
+  border-radius: 5px;
+  font-size: 1.2em;
+  background-color: rgb(118, 248, 118);
+  margin-bottom: 10px;
+}
+
+.button_AddPL a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+
+.button_AddPL button,
+.button_AddSg button {
+  border: none;
+  background: none;
+}
+
+.button_create {
+  border: 1px solid black;
+  border-radius: 2px;
 }
