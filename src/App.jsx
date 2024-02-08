@@ -35,7 +35,6 @@ function App() {
   };
 
   function deletePlaylist(playlistId) {
-    // Supprimer une playlist de la liste principale
     fetch(`http://localhost:1234/playlists/delete/${playlistId}`, {
       method: "DELETE",
       headers: { "Content-Type": "application/json" },
@@ -90,7 +89,7 @@ function App() {
                       </Link>
                     </li>
                     <div className="buttonDelPlay">
-                      <button onClick={() => deletePlaylist(playlistId)}>
+                      <button onClick={() => deletePlaylist(playlist._id)}>
                         ❌
                       </button>
                     </div>
